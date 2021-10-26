@@ -1,0 +1,36 @@
+//program untuk menjadwalkan aktivitas sehari.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    float A[100], B[100], j;
+    int i, k;
+    string C[100];
+    
+    cout<<"Masukkan jam mulai, jam berakhir, keterangan :\n";
+    
+    for(i=0;i>=0;i++)
+    {
+       cin>>A[i]; 
+       
+       j = A[i];
+      
+       if(j==0.0)
+       {
+           break;
+       }
+       cin>>B[i]; cin>>C[i]; cout<<"\n";
+    }
+    
+    cout<<"Waktu"<<"\t\t|Keterangan\n"<<"--------------------------------\n";
+    
+    for(k=0;k<i;k++)
+    {
+        cout<<A[k]<<" - "<<B[k];
+        cout<<"\t\t"<<C[k]<<"\n";
+        
+    }
+    return 0;
+}
